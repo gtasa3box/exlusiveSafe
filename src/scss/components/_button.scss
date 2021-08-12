@@ -1,0 +1,25 @@
+.button {
+	cursor: pointer;
+	&_inside {
+		display: inline-flex;
+		align-items: center;
+		font-family: 'Exo 2', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 135%;
+		text-align: center;
+		text-transform: uppercase;
+		color: #FFFFFF;
+		border: 2px solid #68493F;
+		padding: 15px 22.25px 15px 35px;
+		transition: background 0.5s ease;
+		svg {
+			margin-left: 30px;
+		}
+		&:hover {
+			background-color: #68493F;
+		}
+	}
+}
+

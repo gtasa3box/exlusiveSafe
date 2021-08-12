@@ -2,26 +2,43 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#111111">
-  <title>New site</title>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#111111">
+	<title>Вход</title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/vendor.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 
 <body>
-  <div class="site-container">
-    @include('partials/header.html')
-    <img src="img/cover.jpg" alt="Обложка" style="width: 100%;">
-    @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример инклуда -->
-  </div>
-  <script src="js/vendor.js"></script>
-  <script src="js/main.js"></script>
+	<div class="site-container">
+		<div class="inside">
+			<div class="inside__wrapper">
+				<div class="inside__content">
+					<div class="inside__logo">
+						<a class="logo"></a>
+						<p>СЕЙФЫ ЭТАЛОН</p>
+					</div>
+					<div class="inside__text">
+						<h2>Безкомпромиссная защита в&nbsp;своей самой красивой форме. Изготовление эксклюзивных сейфов по&nbsp;параметрам заказчика.</h2>
+					</div>
+					<div class="inside__button">
+						<a href="main.html" class="button button_inside">Войти 
+							<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M0 5.75116H15.4976M15.4976 5.75116L10.502 10.7482M15.4976 5.75116L10.5005 1.25116" stroke="white" stroke-width="2"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/vendor.js"></script>
+	<script src="js/main.js"></script>
 </body>
 
 </html>
