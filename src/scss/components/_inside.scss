@@ -2,7 +2,7 @@
 	position: absolute;
 	width: 100%;
 	height: 100vh;
-	background-color: #2D2524;
+	background-color: #171312;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -36,10 +36,7 @@
 		font-weight: 400;
 		font-size: 20px;
 		line-height: 150%;
-		/* or 30px */
-
 		text-align: center;
-
 		color: #FFFFFF;
 		max-width: 572px;
 	}
@@ -57,8 +54,5 @@
 			color: #F6DDE0;
 			margin-top: 20px;
 		}
-	}
-	&__button {
-
 	}
 }
