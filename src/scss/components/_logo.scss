@@ -4,4 +4,24 @@
 	background-size: 100%;
 	width: 133px;
 	height: 70px;
+
+}
+.logo-black {
+	display: block;
+	background-image: url(../img/logo-black.svg);
+	background-size: 100%;
+	width: 89px;
+	height: 46px;
+	&__text {
+		font-family: 'Exo 2', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 17px;
+		line-height: 130%;
+		color: #231814;
+		text-transform: uppercase;
+		max-width: 68px;
+		text-align: left;
+		margin-left: 20px;
+	}
 }

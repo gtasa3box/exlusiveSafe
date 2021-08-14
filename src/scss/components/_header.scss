@@ -1,1 +1,18 @@
-//
+.cap {
+	display: flex;
+	justify-content: center;
+	height: 96px;
+	&__wrapper {
+		width: 1219px;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 25px 0;
+	}
+	&__logo {
+		display: inline-flex;
+	}
+	&__nav {
+		display: inline-flex;
+	}
+}

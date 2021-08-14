@@ -2,26 +2,50 @@
 <html lang="ru">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <meta name="theme-color" content="#111111">
-  <title>New site</title>
-  <link rel="stylesheet" href="css/global.css">
-  <link rel="stylesheet" href="css/vendor.css">
-  <link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<meta name="theme-color" content="#111111">
+	<title>Стокингер</title>
+	<link rel="stylesheet" href="css/global.css">
+	<link rel="stylesheet" href="css/vendor.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.css" integrity="sha512-TD/aL30dNLN0VaHVoh9voFlNi7ZuWQYtV4bkIJv2ulZ8mEEkZJ7IyGvDthMKvIUwzLmPONnjQlAi55HTERVXpw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
-  <div class="site-container">
-    @include('partials/header.html')
-    
-    @include('partials/footer.html')
-    <!-- @include('html/h1.html') пример инклуда -->
-  </div>
-  <script src="js/vendor.js"></script>
-  <script src="js/main.js"></script>
+	<div id="fullpage">
+		<div class="section s1">
+			<div class="section__content">
+				@include('partials/header.html')
+				@include('partials/intro.html')
+			</div>
+		</div>
+		<div class="section s2">
+			<h1>Somefdgdgdf section</h1>
+		</div>
+		<div class="section s3">
+			<h1>Somedfgdfg section</h1>
+		</div>
+		<div class="section s4">
+			<h1>Somfdge section</h1>
+		</div>
+	</div>
+
+
+	<script src="js/vendor.js"></script>
+	<script src="js/main.js"></script>
+	<script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.2/fullpage.min.js" integrity="sha512-gSf3NCgs6wWEdztl1e6vUqtRP884ONnCNzCpomdoQ0xXsk06lrxJsR7jX5yM/qAGkPGsps+4bLV5IEjhOZX+gg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+	<script>
+
+		new fullpage('#fullpage', {
+			autoScrolling: true
+		});
+
+
+	</script>
 </body>
 
 </html>

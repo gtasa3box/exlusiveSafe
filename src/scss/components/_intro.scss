@@ -1,0 +1,25 @@
+.intro {
+	background-image: url(../img/intro/intro-background.jpg);
+	background-size: cover;
+	width: 100%;
+	height: calc(100vh - 96px);
+	&__content {
+		padding-top: 30%;
+		display: flex;
+	}
+	&__title {
+		text-align: left;
+		font-family: 'Exo 2', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 32px;
+		line-height: 150%;
+		color: #332B28;
+		span {
+			font-weight: 600;
+			font-size: 42px;
+			text-transform: uppercase;
+			color: #231814;
+		}
+	}
+}
