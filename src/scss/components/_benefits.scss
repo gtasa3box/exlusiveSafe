@@ -1,0 +1,26 @@
+.benefits {
+	width: 100%;
+	&__wrapper {
+
+	}
+	&__content {
+		display: flex;
+		flex-wrap: wrap;
+	}
+	&__card {
+		width: 50%;
+	}
+}
+.card {
+	&__wrapper {
+		
+	}
+	&__img {
+
+	}
+	&__text {
+		&_center {
+
+		}
+	}
+}

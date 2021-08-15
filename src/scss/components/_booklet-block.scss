@@ -1,0 +1,48 @@
+.booklet {
+	width: 100%;
+	color: white;
+	&__wrapper {
+	}
+	&__content {
+		display: flex;
+	}
+	&__img {
+		width: 50%;
+		display: block;
+		background-size: cover;
+	}
+	&__info {
+		width: 50%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		text-align: left;
+		padding-left: 170px;
+		padding-top: 187px;
+		padding-bottom: 167px;
+		&.padding-right {
+			padding-left: none;
+			padding-right: none;
+		}
+	}
+	&__title {
+		font-family: 'Exo 2', sans-serif;
+		font-style: normal;
+		font-weight: 600;
+		font-size: 20px;
+		line-height: 150%;
+	}
+	p {
+		font-family: 'Exo 2', sans-serif;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 18px;
+		line-height: 150%;
+		max-width: 472px;
+
+	}
+	&__text {
+		margin-top: 30px;
+		margin-bottom: 27px;
+	}
+}
