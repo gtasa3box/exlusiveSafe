@@ -2,6 +2,9 @@
 	&__content {
 		width: 100%;
 		height: 100%;
+		@media screen and (max-height: 650px) {
+			height: initial;
+		}
 	}
 }
 .flex-align-center {
@@ -11,4 +14,9 @@
 
 .text-black {
 	color: #231814;
+}
+.orderone {
+	@media screen and (max-width: 736px) {
+		order: 1;
+	}
 }

@@ -2,17 +2,52 @@
 	display: flex;
 	justify-content: center;
 	height: 95px;
+	position: relative;
 	&__wrapper {
-		width: 1219px;
+		width: 1360px;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
 		padding: 25px 0;
+		@media screen and (max-width: 1400px) {
+			padding: 25px 20px;
+		}
+		@media screen and (max-width: 780px) {
+			padding: 25px 10px;
+		}
 	}
 	&__logo {
 		display: inline-flex;
+		a {
+			width: 89px;
+			height: 46px;
+		}
 	}
 	&__nav {
-		display: inline-flex;
+		display: flex;
+		transition: 0.3s ease;
+		@media screen and (max-width: 780px) {
+			opacity: 0;
+			pointer-events: none;
+		}
+		@media screen and (min-width: 780px) {
+			display: flex !important;
+		}
+		@media screen and (max-width: 780px) {
+			width: 100%;
+			border-top: 1px solid #fffaf6;
+		}
+	}
+	&__burger {
+		display: block;
+		width: 29px;
+		height: 29px;
+		cursor: pointer;
+		position: relative;
+		margin-right: 10px;
+		@media screen and (min-width: 780px) {
+			display: none;
+		}
+		order: 1;
 	}
 }

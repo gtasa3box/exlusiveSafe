@@ -1,18 +1,18 @@
 .logo {
 	display: block;
 	background-image: url(../img/logo.svg);
-	background-size: 100%;
+	background-size: contain;
+	background-repeat: no-repeat;
 	width: 133px;
 	height: 70px;
-
+	background-position: center;
 }
 .logo-black {
 	display: block;
 	background-image: url(../img/logo-black.svg);
-	background-size: 100%;
-	width: 89px;
-	height: 46px;
-
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
 	&__text {
 		font-family: 'Exo 2', sans-serif;
 		font-style: normal;

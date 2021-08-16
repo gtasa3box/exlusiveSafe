@@ -5,7 +5,10 @@
 	background-color: #15182E;
 	height:84px;
 	&__wrapper {
-		width: 1219px;
+		width: 1360px;
+		@media screen and (max-width: 1400px) {
+			padding: 0 20px;
+		}
 	}
 	&__content {
 		display: flex;
@@ -20,21 +23,23 @@
 	}
 	&__adress {
 		font-family: 'Exo 2', sans-serif;
-		flex: 1;
 	}
 	&__requisites {
 		display: flex;
 		font-size: 12px;
+		text-align: center;
 		p:not(:last-child) {
 			margin-right: 7px;
 		}
 	}
 	&__politic {
+		display: flex;
+		justify-content: flex-end;
 		font-size: 14px;
 		text-decoration: underline;
 		color: rgba(255, 255, 255, 0.75);
 		cursor: pointer;
-		flex: 1;
+		
 		&:hover {
 			color: rgba(255, 255, 255, 1);
 		}
