@@ -24,6 +24,11 @@
 		@media screen and (max-width: 800px) {
 			margin-bottom: 10px;
 		}
+		&:not(:last-child) {
+			@media screen and (max-width: 800px) {
+				order: 1;
+			}
+		}
 	}
 	&__content {
 		display: flex;
@@ -66,6 +71,9 @@
 				color: rgba(255, 255, 255, 1);
 			}
 		}
+		@media screen and (max-width: 800px) {
+			margin-top: 10px;
+		}
 	}
 	&__politic {
 		display: flex;
@@ -77,6 +85,9 @@
 		color: rgba(255, 255, 255, 0.55);
 		&:hover {
 			color: rgba(255, 255, 255, 1);
+		}
+		@media screen and (max-width: 800px) {
+			margin-bottom: 10px;
 		}
 	}
 	&__mail {
