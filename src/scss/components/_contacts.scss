@@ -15,6 +15,12 @@
 	@media screen and (max-height: 619px) {
 		height: initial;
 	}
+	@media screen and (max-widht: 550px) {
+		height: initial;
+	}
+	@media (min-width: 767px) and (max-width: 769px) {
+		height: calc(100vh - 180px);
+	}
 	&__content {
 		height: 633px;
 		display: flex;
