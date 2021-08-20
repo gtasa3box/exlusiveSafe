@@ -19,7 +19,7 @@
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		@media screen and (max-width: 575px) {
+		@media screen and (max-width: 591px) {
 			padding: 0 20px;
 		}
 	}
@@ -39,11 +39,23 @@
 		text-align: center;
 		color: #FFFFFF;
 		max-width: 572px;
+		@media screen and (max-width: 515px) {
+			font-size: 13px;
+			margin-top: 25px;
+		}
 	}
 	&__logo {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		.logo {
+			width: 133px;
+			height: 70px;
+			@media screen and (max-width: 515px) {
+				width: 75px;
+				height: 35px;
+			}
+		}
 		p {
 			font-family: Source Serif Pro;
 			font-style: normal;
@@ -53,6 +65,10 @@
 			text-align: center;
 			color: #F6DDE0;
 			margin-top: 20px;
+			@media screen and (max-width: 515px) {
+				font-size: 16px;
+				margin-top: 10px;
+			}
 		}
 	}
 }

@@ -27,6 +27,9 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		@media screen and (max-width: 330px) {
+			height: 550px;
+		}
 	}
 	&__logo {
 		display: flex;
