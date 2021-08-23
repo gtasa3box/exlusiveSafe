@@ -68,6 +68,9 @@
 			padding: 20px 10px 0;
 			font-size: 14px;
 		}
+		@media screen and (max-height: 690px) {
+			font-size: 14px;
+		}
 		@media screen and (max-height: 630px) {
 			padding: 15px 10px 0;
 		}
@@ -79,6 +82,9 @@
 			margin: 24px 0;
 			@media screen and (max-width: 1000px) {
 				margin: 12px 0;
+			}
+			@media screen and (max-height: 690px) {
+				margin: 8px 0;
 			}
 		}
 	}

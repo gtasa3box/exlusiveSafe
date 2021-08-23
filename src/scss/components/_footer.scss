@@ -52,6 +52,9 @@
 		@media screen and (max-width: 800px) {
 			text-align: center;
 		}
+		@media screen and (max-height: 690px) {
+			font-size: 12px;
+		}
 	}
 	&__requisites {
 		display: flex;
@@ -61,6 +64,9 @@
 		margin-top: 15px;
 		p:not(:last-child) {
 			margin-right: 7px;
+		}
+		@media screen and (max-height: 690px) {
+			font-size: 10px;
 		}
 		@media screen and (max-width: 330px) {
 			font-size: 10px;
@@ -77,6 +83,9 @@
 				color: rgba(255, 255, 255, 1);
 			}
 		}
+		@media screen and (max-height: 690px) {
+			font-size: 10px;
+		}
 		@media screen and (max-width: 800px) {
 			margin-top: 10px;
 		}
@@ -92,6 +101,9 @@
 		&:hover {
 			color: rgba(255, 255, 255, 1);
 		}
+		@media screen and (max-height: 690px) {
+			font-size: 12px;
+		}
 		@media screen and (max-width: 800px) {
 			margin-bottom: 10px;
 		}
@@ -104,6 +116,9 @@
 		text-align: right;
 		@media screen and (max-width: 800px) {
 			text-align: center;
+		}
+		@media screen and (max-height: 690px) {
+			font-size: 12px;
 		}
 		&:hover {
 			color: rgba(255, 255, 255, 1);

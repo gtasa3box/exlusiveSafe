@@ -1,14 +1,12 @@
 .logo {
 	display: block;
 	background-image: url(../img/logo.svg);
-	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 }
 .logo-black {
 	display: block;
 	background-image: url(../img/logo-black.svg);
-	background-size: contain;
 	background-repeat: no-repeat;
 	background-position: center;
 	&__text {
