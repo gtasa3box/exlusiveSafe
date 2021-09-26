@@ -1,5 +1,7 @@
 <?php
 
+include("SxGeo.php");
+
 $method = $_SERVER['REQUEST_METHOD'];
 
 //Script Foreach
@@ -11,6 +13,18 @@ if ( $method === 'POST' ) {
 
 	$massive = [];
 
+	$ip=$_SERVER['REMOTE_ADDR'];
+
+	$SxGeo = new SxGeo('SxGeoCity.dat');
+
+	
+
+	$GeoPos = $SxGeo->getCity($ip);
+
+	$massive['Geo'] = $GeoPos['city']['name_ru'];
+
+	$massive['Geo'] .= ' ('.$ip.')';
+	
 	$massive['checkboxes']  = 'None';
 	if(isset($_POST['storage']) && is_array($_POST['storage']) && count($_POST['storage']) > 0){
 		$massive['checkboxes'] = htmlspecialchars(implode(', ', $_POST['storage']), ENT_QUOTES);
