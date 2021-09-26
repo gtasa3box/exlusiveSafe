@@ -9,26 +9,24 @@ if ( $method === 'POST' ) {
 	$admin_email = 'gtasa3box@gmail.com';
 	$form_subject = 'etalon-safe.ru';
 
-	$massive = [];
-
-	$massive['checkboxes']  = 'None';
+	$selectedStorage  = 'None';
 	if(isset($_POST['storage']) && is_array($_POST['storage']) && count($_POST['storage']) > 0){
-		$massive['checkboxes'] = htmlspecialchars(implode(', ', $_POST['storage']), ENT_QUOTES);
+		$selectedStorage = implode(', ', $_POST['storage']);
 	}
+	$body .= 'Selected Storage: ' . $selectedStorage;
+	$variabletext = trim($_POST["variable-text"]);
 
-	$massive['variabletext'] = htmlspecialchars(trim($_POST["variable-text"]), ENT_QUOTES);
+	$width = trim($_POST["width"]);
+	$height  = trim($_POST["height"]);
+	$depth  = trim($_POST["depth"]);
 
-	$massive['width'] = intval(trim($_POST["width"]));
-	$massive['height']  = intval(trim($_POST["height"]));
-	$massive['depth']  = intval(trim($_POST["depth"]));
+	$break = trim($_POST["break"]);
+	$fire = trim($_POST["fire"]);
 
-	$massive['break'] = htmlspecialchars(trim($_POST["break"]), ENT_QUOTES);
-	$massive['fire'] = htmlspecialchars(trim($_POST["fire"]), ENT_QUOTES);
+	$number  = trim($_POST["number"]);
+	
 
-	$massive['number']  = htmlspecialchars(trim($_POST["number"]), ENT_QUOTES);
-
-
-	foreach ( $massive as $key => $value ) {
+	foreach ( $_POST as $key => $value ) {
 		if ( $value != "") {
 			$message .= "
 			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
