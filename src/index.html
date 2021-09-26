@@ -41,12 +41,79 @@
 						<h1>Изготовление эксклюзивных сейфов<br> по&nbsp;параметрам заказчика.</h1>
 					</div>
 					<div class="inside__button">
-						<a href="main.html" class="button button_inside">Войти 
+						<a href="main.html" class="button button_inside">Посмотреть сейфы 
 							<svg width="17" height="12" viewBox="0 0 17 12" fill="none" xmlns="http://www.w3.org/2000/svg">
 								<path d="M0 5.75116H15.4976M15.4976 5.75116L10.502 10.7482M15.4976 5.75116L10.5005 1.25116" stroke="white" stroke-width="2"/>
 							</svg>
 						</a>
 					</div>
+					<div class="inside__quiz">
+						<p>или</p>
+						<div class="inside__movedown">
+							<span>Подберём сейф по Вашим параметрам за 5 минут!</span>
+							<a></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="quiz">
+			<div class="quiz__wrapper">
+				<div class="quiz__content">
+					<h2 class="quiz__title">Ответьте на 5 уточняющих вопросов и получите предложение эксклюзивно для Вас.</h2>
+					
+					<form action="" class="quiz__form form">
+						<div class="form__storage">
+							<p>Изделие предназначено для хранения:</p>
+							<input id="time" type="checkbox">
+							<label for="time">Часы</label>
+
+							<input id="jew" type="checkbox">
+							<label for="jew">Драгоценности</label>
+
+							<input id="weapon" type="checkbox">
+							<label for="weapon">Оружие</label>
+
+							<input id="doc" type="checkbox">
+							<label for="doc">Документы</label>
+
+							<textarea name="variable" id="variable"></textarea>
+						</div>
+
+						<div class="form__dimensions">
+							<p>Введите габариты изделия в мм:</p>
+							<p>Ширина <input type="text" placeholder="0"></p>
+							<p>Высота <input type="text" placeholder="0"></p>
+							<p>Глубина <input type="text" placeholder="0"></p>
+						</div>
+
+						<div class="form__breaking">
+							<p>Класс сопротивления взлому:</p>
+							<input id="metal" type="radio" name="break">
+							<label for="metal">Cейфовый металлический шкаф (класс S1, ГОСТ Р 55148-2018)</label>
+
+							<input id="elementary" type="radio" name="break">
+							<label for="elementary">Cейф начального уровня (класс 0, ГОСТ Р 50862-2017)</label>
+
+							<input id="reliable" type="radio" name="break">
+							<label for="reliable">Надёжное сейфвовое хранилище (класс 1 - 3, ГОСТ Р 50862-2017)</label>
+						</div>
+
+						<div class="form__fire">
+							<p>Класс сопротивления огню:</p>
+							<input id="unprotected" type="radio" name="fire">
+							<label for="unprotected">Без огнестойкости (без класса)</label>
+
+							<input id="protected" type="radio" name="fire">
+							<label for="protected">С защитой бумажного содержимого сейфа от огня и жара на 60 минут (60Б, ГОСТ Р 57384-2017)</label>
+						</div>
+
+						<div class="form__number">
+							<input type="tel" required>
+							<input type="submit" value="Получить проект сейфа">
+						</div>
+					</form>
 				</div>
 			</div>
 		</div>
