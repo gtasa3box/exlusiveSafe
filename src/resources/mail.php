@@ -7,8 +7,7 @@ $method = $_SERVER['REQUEST_METHOD'];
 //Script Foreach
 $c = true;
 if ( $method === 'POST' ) {
-	//$admin_email = 'info@etalon-safe.ru';
-	$admin_email = 'gtasa3box@gmail.com';
+	$admin_email = 'info@etalon-safe.ru';
 	$form_subject = 'etalon-safe.ru';
 
 	$massive = [];
