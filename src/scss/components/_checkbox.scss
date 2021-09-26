@@ -66,6 +66,9 @@ label {
     color: #000000;
     cursor: pointer;
     margin-bottom: 24px;
+    @media screen and (max-width: 440px) {
+        font-size: 12px;
+    }
 }
 .radio+label {
     display: inline-flex;
@@ -102,4 +105,8 @@ label {
         transform: translateY(-50%);
         border-radius: 50%;
     }
+}
+
+input:disabled + label:before, input:disabled + label {
+    opacity: 0.6;
 }

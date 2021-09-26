@@ -2,19 +2,30 @@
 
 $method = $_SERVER['REQUEST_METHOD'];
 
-var_dump($_POST);
-var_dump($_GET);
-
 //Script Foreach
 $c = true;
 if ( $method === 'POST' ) {
+	$admin_email = 'info@etalon-safe.ru';
+	$form_subject = 'etalon-safe.ru';
 
-	$project_name = trim($_POST["project_name"]);
-	$admin_email  = trim($_POST["admin_email"]);
-	$form_subject = trim($_POST["form_subject"]);
+	$selectedStorage  = 'None';
+	if(isset($_POST['storage']) && is_array($_POST['storage']) && count($_POST['storage']) > 0){
+		$selectedStorage = implode(', ', $_POST['storage']);
+	}
+	$body .= 'Selected Storage: ' . $selectedStorage;
+	$variabletext = trim($_POST["variable-text"]);
 
+	$width = trim($_POST["width"]);
+	$height  = trim($_POST["height"]);
+	$depth  = trim($_POST["depth"]);
+
+	$break = trim($_POST["break"]);
+	$fire = trim($_POST["fire"]);
+
+	$number  = trim($_POST["number"]);
+	
 	foreach ( $_POST as $key => $value ) {
-		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
+		if ( $value != "") {
 			$message .= "
 			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
 				<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
@@ -23,23 +34,6 @@ if ( $method === 'POST' ) {
 			";
 		}
 	}
-} else if ( $method === 'GET' ) {
-
-	$project_name = trim($_GET["project_name"]);
-	$admin_email  = trim($_GET["admin_email"]);
-	$form_subject = trim($_GET["form_subject"]);
-
-	foreach ( $_GET as $key => $value ) {
-		if ( $value != "" && $key != "project_name" && $key != "admin_email" && $key != "form_subject" ) {
-			$message .= "
-			" . ( ($c = !$c) ? '<tr>':'<tr style="background-color: #f8f8f8;">' ) . "
-				<td style='padding: 10px; border: #e9e9e9 1px solid;'><b>$key</b></td>
-				<td style='padding: 10px; border: #e9e9e9 1px solid;'>$value</td>
-			</tr>
-			";
-		}
-	}
-}
 
 $message = "<table style='width: 100%;'>$message</table>";
 
@@ -53,3 +47,6 @@ $headers = "MIME-Version: 1.0" . PHP_EOL .
 'Reply-To: '.$admin_email.'' . PHP_EOL;
 
 mail($admin_email, adopt($form_subject), $message, $headers );
+
+header('Location: http://'.$_SERVER['HTTP_HOST'].'/');
+exit;

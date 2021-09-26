@@ -6,6 +6,13 @@
         width: 25%;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 1050px) {
+            width: 50%;
+            margin-bottom: 40px;
+        }
+        @media screen and (max-width: 690px) {
+            width: 80%;
+        }
         textarea {
             background: #EEE7E4;
             border: 1px solid rgba(51, 43, 40, 0.5);
@@ -18,12 +25,21 @@
             font-weight: normal;
             font-size: 14px;
             color: rgba(35, 24, 20, 0.7);
+            @media screen and (max-width: 440px) {
+                width: 100%;
+            }
         }
     }
     &__dimensions {
         width: 25%;
         display: flex;
         flex-direction: column;
+        @media screen and (max-width: 1050px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 690px) {
+            width: 80%;
+        }
         p{
             font-size: 14px;
             line-height: 150%;
@@ -53,18 +69,47 @@
         display: flex;
         flex-direction: column;
         padding-right: 100px;
+        @media screen and (max-width: 1200px) {
+            padding-right: 20px;
+        }
+        @media screen and (max-width: 1050px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 690px) {
+            width: 80%;
+        }
     }
     &__fire {
         width: 25%;
         display: flex;
         flex-direction: column;
         padding-right: 20px;
+        @media screen and (max-width: 1050px) {
+            width: 50%;
+        }
+        @media screen and (max-width: 690px) {
+            width: 80%;
+        }
     }
     &__number {
         width: 100%;
         display: flex;
         justify-content: center;
         margin-top: 140px;
+        @media screen and (max-width: 1200px) {
+            margin-top: 80px;
+        }
+        @media screen and (max-width: 1050px) {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        @media screen and (max-width: 690px) {
+            width: 80%;
+        }
+        @media screen and (max-width: 500px) {
+            flex-wrap: wrap;
+            margin-top: 20px;
+        }
         input[type=tel] {
             background: #EEE7E4;
             border: 1px solid rgba(51, 43, 40, 0.5);
@@ -78,6 +123,10 @@
             font-weight: normal;
             font-size: 14px;
             color: rgba(35, 24, 20, 0.7);
+            @media screen and (max-width: 500px) {
+                margin-right: 0;
+                margin-bottom: 10px;
+            }
         }
         input[type=submit] {
             width: 294px;

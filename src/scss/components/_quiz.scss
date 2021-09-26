@@ -6,6 +6,9 @@
     background-color: #F5EFED;
     font-family: 'Exo 2', sans-serif;
     font-style: normal;
+    @media screen and (max-width: 1050px) {
+        height: initial;
+    }
     &:before {
 		content: '';
 		position: absolute;
@@ -19,6 +22,16 @@
         max-width: 1600px;
         margin: 0 auto;
         padding-top: 130px;
+        @media screen and (max-width: 1600px) {
+            padding: 0 10px;
+            padding-top: 130px;
+        }
+        @media screen and (max-width: 1200px) {
+            padding-top: 80px;
+        }
+        @media screen and (max-width: 440px) {
+            padding-top: 40px;
+        }
     }
     &__content {
         display: flex;
@@ -32,9 +45,18 @@
         line-height: 150%;
         text-align: center;
         color: #000000;
+        @media screen and (max-width: 440px) {
+            font-size: 18px;
+        }
     }
     &__form {
         margin-top: 150px;
+        @media screen and (max-width: 1200px) {
+            margin-top: 90px;
+        }
+        @media screen and (max-width: 1050px) {
+            margin-top: 40px;
+        }
     }
     h4 {
         font-weight: 600;
@@ -42,5 +64,9 @@
         line-height: 150%;
         color: #231814;
         margin-bottom: 25px;
+        @media screen and (max-width: 440px) {
+            font-size: 15px;
+            margin-bottom: 20px;
+        }
     }
 }
