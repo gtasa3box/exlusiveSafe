@@ -51,66 +51,66 @@
 						<p>или</p>
 						<div class="inside__movedown">
 							<span>Подберём сейф по Вашим параметрам за 5 минут!</span>
-							<a></a>
+							<a href="#quiz"></a>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div class="quiz">
+		<div id="quiz" class="quiz">
 			<div class="quiz__wrapper">
 				<div class="quiz__content">
 					<h2 class="quiz__title">Ответьте на 5 уточняющих вопросов и получите предложение эксклюзивно для Вас.</h2>
 					
 					<form action="" class="quiz__form form">
 						<div class="form__storage">
-							<p>Изделие предназначено для хранения:</p>
-							<input id="time" type="checkbox">
+							<h4>Изделие предназначено для хранения:</h4>
+							<input class="checkbox" id="time" type="checkbox">
 							<label for="time">Часы</label>
 
-							<input id="jew" type="checkbox">
+							<input class="checkbox" id="jew" type="checkbox">
 							<label for="jew">Драгоценности</label>
 
-							<input id="weapon" type="checkbox">
+							<input class="checkbox" id="weapon" type="checkbox">
 							<label for="weapon">Оружие</label>
 
-							<input id="doc" type="checkbox">
+							<input class="checkbox" id="doc" type="checkbox">
 							<label for="doc">Документы</label>
 
-							<textarea name="variable" id="variable"></textarea>
+							<textarea name="variable" id="variable" placeholder="Свой вариант"></textarea>
 						</div>
 
 						<div class="form__dimensions">
-							<p>Введите габариты изделия в мм:</p>
-							<p>Ширина <input type="text" placeholder="0"></p>
-							<p>Высота <input type="text" placeholder="0"></p>
-							<p>Глубина <input type="text" placeholder="0"></p>
+							<h4>Введите габариты изделия в мм:</h4>
+							<p>Ширина <input type="number" placeholder="0"></p>
+							<p>Высота <input type="number" placeholder="0"></p>
+							<p>Глубина <input type="number" placeholder="0"></p>
 						</div>
 
 						<div class="form__breaking">
-							<p>Класс сопротивления взлому:</p>
-							<input id="metal" type="radio" name="break">
+							<h4>Класс сопротивления взлому:</h4>
+							<input class="radio" id="metal" type="radio" name="break" checked>
 							<label for="metal">Cейфовый металлический шкаф (класс S1, ГОСТ Р 55148-2018)</label>
 
-							<input id="elementary" type="radio" name="break">
+							<input class="radio" id="elementary" type="radio" name="break">
 							<label for="elementary">Cейф начального уровня (класс 0, ГОСТ Р 50862-2017)</label>
 
-							<input id="reliable" type="radio" name="break">
+							<input class="radio" id="reliable" type="radio" name="break">
 							<label for="reliable">Надёжное сейфвовое хранилище (класс 1 - 3, ГОСТ Р 50862-2017)</label>
 						</div>
 
 						<div class="form__fire">
-							<p>Класс сопротивления огню:</p>
-							<input id="unprotected" type="radio" name="fire">
+							<h4>Класс сопротивления огню:</h4>
+							<input class="radio" id="unprotected" type="radio" name="fire" checked>
 							<label for="unprotected">Без огнестойкости (без класса)</label>
 
-							<input id="protected" type="radio" name="fire">
+							<input class="radio" id="protected" type="radio" name="fire">
 							<label for="protected">С защитой бумажного содержимого сейфа от огня и жара на 60 минут (60Б, ГОСТ Р 57384-2017)</label>
 						</div>
 
 						<div class="form__number">
-							<input type="tel" required>
+							<input class="phone_mask" type="tel" placeholder="Ваш телефон" required>
 							<input type="submit" value="Получить проект сейфа">
 						</div>
 					</form>
@@ -119,6 +119,8 @@
 		</div>
 	</div>
 
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js" integrity="sha512-d4KkQohk+HswGs6A1d6Gak6Bb9rMWtxjOa0IiY49Q3TeFd5xAzjWXDCBW9RS7m86FQ4RzM2BdHmdJnnKRYknxw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 	<script src="js/vendor.js"></script>
 	<script src="js/main.js"></script>
 </body>

@@ -1,3 +1,97 @@
 .form {
-    
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    &__storage {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        textarea {
+            background: #EEE7E4;
+            border: 1px solid rgba(51, 43, 40, 0.5);
+            box-sizing: border-box;
+            resize: none;
+            outline: none;
+            width: 289px;
+            height: 100px;
+            padding: 14px 18px;
+            font-weight: normal;
+            font-size: 14px;
+            color: rgba(35, 24, 20, 0.7);
+        }
+    }
+    &__dimensions {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        p{
+            font-size: 14px;
+            line-height: 150%;
+            color: rgba(35, 24, 20, 0.7);
+            max-width: 167px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        input {
+            background: rgba(104, 73, 63, 0.05);
+            border: 1px solid rgba(51, 43, 40, 0.5);
+            width: 80px;
+            height: 42px;
+            text-align: center;
+            vertical-align: middle;
+            outline: none;
+            -moz-appearance: textfield;
+            &::-webkit-inner-spin-button { 
+                display: none;
+            }
+        }
+    }
+    &__breaking {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 100px;
+    }
+    &__fire {
+        width: 25%;
+        display: flex;
+        flex-direction: column;
+        padding-right: 20px;
+    }
+    &__number {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-top: 140px;
+        input[type=tel] {
+            background: #EEE7E4;
+            border: 1px solid rgba(51, 43, 40, 0.5);
+            outline: none;
+            width: 294px;
+            height: 54px;
+            margin-right: 30px;
+            outline: none;
+            padding: 0 20px;
+            vertical-align: middle;
+            font-weight: normal;
+            font-size: 14px;
+            color: rgba(35, 24, 20, 0.7);
+        }
+        input[type=submit] {
+            width: 294px;
+            height: 54px;
+            border: 2px solid #DB9077;
+            cursor: pointer;
+            font-weight: normal;
+            font-size: 18px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.3s ease;
+            &:hover {
+                background-color: white;
+            }
+        }
+    }
 }
