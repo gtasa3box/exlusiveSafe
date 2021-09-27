@@ -45,7 +45,7 @@
 	<!-- End Google Tag Manager (noscript) -->
 
 	<div id="fullpage">
-		<div class="section s1">
+		<div class="section s1" data-anchor="oneslide">
 			<div class="section__content">
 				@include('partials/header.html')
 				@include('partials/intro.html')
@@ -79,7 +79,12 @@
 		</div>
 	</div>
 
-
+		<!--Кнопка наверх-->
+		<div id="button-up" class="button-up">
+			<a class="button-up__img"></a>
+		</div>
+		<!--Кнопка наверх-end-->
+	
 	<script src="js/vendor.js"></script>
 	<script src="js/main.js"></script>
 	<script  src="https://code.jquery.com/jquery-3.6.0.min.js"  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="  crossorigin="anonymous"></script>
@@ -89,12 +94,24 @@
 		new fullpage('#fullpage', {
 			autoScrolling: true,
 			responsiveWidth: 550,
-			responsiveHight: 619
+			responsiveHight: 619,
+			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6']
 		});
 		document.removeEventListener('DOMMouseScroll', MouseWheelHandler, false); //old Firefox
 
 
 	</script>
+	<script>
+	$(document).on('click', '#button-up', function(){
+		fullpage_api.moveTo('page1');
+	  });
+	</script>
+	<script>
+	$('#burger').on('click', function () {
+		$('#burgerlink').toggleClass('active');
+		$('.nav').toggleClass('active');
+	});</script>
+
 </body>
 
 </html>

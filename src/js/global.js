@@ -1,3 +1,5 @@
+
+//check-box-disable
 $(function () {
     $("form input[type='radio']").change(function() {
         if ($('#metal').is(":checked")){
@@ -17,6 +19,10 @@ $(function () {
         }
     });
 });
+//check-box-disable-end
 
-
+//mask-phone
 $(".phone_mask").mask("+7 (999) 999-9999");
+//end-mask-phone
+
+
