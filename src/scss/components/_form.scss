@@ -144,3 +144,22 @@
         }
     }
 }
+.quiz_main {
+    display: flex;
+    align-items: center;
+    .quiz__wrapper {
+        @media (max-height: 880px) {
+            padding-top: 20px;
+        }
+    }
+    .form {
+        @media (max-height: 880px) {
+            margin-top: 40px;
+        }
+        &__number {
+            @media (max-height: 880px) {
+                margin-top: 10px;
+            }
+        }
+    }
+}

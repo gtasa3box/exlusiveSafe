@@ -52,26 +52,31 @@
 			</div>
 		</div>
 		<div class="section s2" data-anchor="tech">
+			<div class="section__content">
+				@include('partials/quiz.html')
+			</div>
+		</div>
+		<div class="section s3" data-anchor="tech">
 			<div class="section__content flex-align-center">
 				@include('partials/parameters.html')
 			</div>
 		</div>
-		<div class="section s3">
+		<div class="section s4">
 			<div class="section__content flex-align-center">
 				@include('partials/aesthetics.html')
 			</div>
 		</div>
-		<div class="section s4">
+		<div class="section s5">
 			<div class="section__content flex-align-center">
 				@include('partials/safe.html')
 			</div>
 		</div>
-		<div class="section s5" data-anchor="ben">
+		<div class="section s6" data-anchor="ben">
 			<div class="section__content">
 				@include('partials/benefits.html')
 			</div>
 		</div>
-		<div class="section s5" data-anchor="contacts">
+		<div class="section s7" data-anchor="contacts">
 			<div class="section__content">
 				@include('partials/contacts.html')
 				@include('partials/footer.html')
@@ -95,7 +100,7 @@
 			autoScrolling: true,
 			responsiveWidth: 550,
 			responsiveHight: 619,
-			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6']
+			anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6', 'page7']
 		});
 		document.removeEventListener('DOMMouseScroll', MouseWheelHandler, false); //old Firefox
 
