@@ -164,33 +164,33 @@
 			}
 		}
 	}
-	&__btn {
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		width: 274px;
-		height: 54px;
-		border: 2px solid #F25D2C;
-		font-family: 'Exo 2', sans-serif;
-		font-style: normal;
-		font-weight: normal;
-		font-size: 18px;
-		line-height: 135%;
-		text-transform: uppercase;
-		position: relative;
-		color: #332B28;
-		cursor: pointer;
-		margin: 20px auto 0;
-		transition: 0.3s ease;
-		&:before {
-			content: 'за 5 мин';
-			position: absolute;
-			top: -26px;
-			right: 0;
-			font-size: 10px;
-		}
-		&:hover {
-			background-color: white;
-		}
-	}
+	// &__btn {
+	// 	display: flex;
+	// 	justify-content: center;
+	// 	align-items: center;
+	// 	width: 274px;
+	// 	height: 54px;
+	// 	border: 2px solid #F25D2C;
+	// 	font-family: 'Exo 2', sans-serif;
+	// 	font-style: normal;
+	// 	font-weight: normal;
+	// 	font-size: 18px;
+	// 	line-height: 135%;
+	// 	text-transform: uppercase;
+	// 	position: relative;
+	// 	color: #332B28;
+	// 	cursor: pointer;
+	// 	margin: 20px auto 0;
+	// 	transition: 0.3s ease;
+	// 	&:before {
+	// 		content: 'за 5 мин';
+	// 		position: absolute;
+	// 		top: -26px;
+	// 		right: 0;
+	// 		font-size: 10px;
+	// 	}
+	// 	&:hover {
+	// 		background-color: white;
+	// 	}
+	// }
 }

@@ -108,9 +108,14 @@
 	</script>
 	<script>
 	$(document).on('click', '#button-up', function(){
-		fullpage_api.moveTo('page1');
+		fullpage_api.moveTo('page2');
 	  });
 	</script>
+	<script>
+		$(document).on('click', '#button-up', function(){
+			fullpage_api.moveTo('page2');
+		  });
+		</script>
 	<script>
 	$('#burger').on('click', function () {
 		$('#burgerlink').toggleClass('active');
